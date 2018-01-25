@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+<head>
   <!--  Meta  -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no" />
   <title>Michael Johnson | UI/UX Examples - StaffPunch</title>
-  
+
   <!--  Styles  -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/styles.css">
@@ -45,27 +45,27 @@
                 <h2>Project Scope</h2>
                 <p>I found this show called <a target="_blank" href="http://www.foodnetwork.com/shows/the-great-food-truck-race">"The Great Food Truck Race"</a> I began thinking about the food trucks in my area. Where are they on a normal day to day? Which ones even exist? I noted some tasks that I wanted to perform. I wanted to be able to leverage a map servce like Google Maps or Open Street Maps... but how was I going to get the location data of any one food truck on the map? I came to the conclusion that I could install GPS/GPRS hardware to silently run on the trucks which would send location coordinates to a server that could be read by the maps service.</p>
                 <p>I wanted the ability to save a food truck favorite or, possibly, notify a user that a food truck they liked was near by. That would mean a mobile UI and an authentication layer, user profile manipulation, vendor(food truck) profiles and user schemas. At that point I figured that I could offer the food trucks some page space. Maybe update via microblog, or twitter feed. A page for a menu and/or specials board would be handy things to consider.</p>
-                
+
                 <h2>Research</h2>
                 <p>I started poking around the ol' interwebs to see where the competition was. There were a couple, what felt like, mom & pop sites that looked like they had been built by the son of someone that knew a guy that owned a food truck, but one in particular caught my eye: <a target="_blank" href="https://roaminghunger.com/">Roaming Hunger</a>. They looked to be more on the marketing side of things rather than the specific processes I was looking to accomplish, but there was no doubt that this was the site to study.</p>
                 <p>I looked into services like <a target="_blank" href="https://www.twilio.com/">Twilio</a> to handle the process of a device using GPRS data to SMS text to a number that would be fetched by their service to transport to a server via their API. I surmised that single board computers like RaspberryPi and Arduino would have to service the hardware side of things and once one is configured, deployment and management shouldn't be terribly difficult. Installation methods wre likely to be my largest hurdle as the process even felt a little big brothery to me.</p>
-                
+
                 <h2>Prototyping</h2>
                 <p>The first set of screens I developed were specifically for mobile. Mobile development was always the core of the user experience considering the idea that I wanted a method to push notifications to the user. I wanted to show the map and primary options. Not really coming to a hard decision on overall design I began working on the moving parts. The whole service wouldn't work if I couldn't manage a fairly painless way to get data from the trucks to the users.</p>
                 <span class="img-wrap">
-                    <img src="../img/screens/food-truck-mobile.jpg" />
+                    <img src="img/screens/food-truck-mobile.jpg" />
                 </span>
                 <div class="side-by-side">
                     <p>Setting that aside for a bit, I sat down to work on a logo. I wenth through several concepts on paper trying to figure out a direction I wanted to take. The imagery of a food truck started out to be an important design point, but I quickly changed to using a map marker as I felt it easier to work with and just as relevant.</p>
                     <span class="img-wrap">
-                        <img src="../img/food-truck-concept.jpg" />
+                        <img src="img/food-truck-concept.jpg" />
                     </span>
                 </div>
                 <p>For the ime being I settled on a finalized design that I felt good with tabling until I had more time to come back to it for any revisions or new ideas. Due to other engagements and other projects this is where is sat for several months. Some f the processes still rolled around in my head on negotiating some sort of means to use a RaspberryPi with a GPS/GPRS shield in order to plot data to a server. I even had a couple successful tests on basic ways of managing that data.</p>
                 <span class="img-wrap">
-                    <img src="../img/logo-062014.png" />
+                    <img src="img/logo-062014.png" />
                 </span>
-                
+
                 <h2>Follow-ups and Future Thoughts</h2>
                 <p>I did manage to get as far as building a Google Maps front end using NodeJs as a development runtime. I have a core concept module developed for it, but given its nature it has limited availability and even though it works, xcan take some time to populate as it workes to scrape the entirety of the twitter live feed as it developes on specific hashtags.
                 Sooner plans for this are to shelf the hardware aspect of this project and urge the food truck users to tweet to a specific hashtag that will then be marked on the map. Once I create a method to save that data to a database and pull it whenever needed, more analysis can continue on better ways to create this service.</p>
@@ -94,7 +94,7 @@
 			</div>
 		</footer>
 	</div>
-	
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   	<script src="js/script.js"></script>
