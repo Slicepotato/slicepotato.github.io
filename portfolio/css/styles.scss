@@ -332,6 +332,14 @@ main {
                     background-image: url('../img/overlay-food-truck.png');
                 }
             }
+
+            &#food-truck {
+                position: relative;
+
+                &:before {
+                    background-image: url('../img/overlay-highlands.png');
+                }
+            }
         }
     }
 

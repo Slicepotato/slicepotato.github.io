@@ -399,6 +399,14 @@ main section > p a:hover, main section > p a:focus {
   background-image: url("../img/overlay-food-truck.png");
 }
 
+.example li a#food-truck {
+  position: relative;
+}
+
+.example li a#food-truck:before {
+  background-image: url("../img/overlay-highlands.png");
+}
+
 @media (min-width: 420px) {
   .example {
     -webkit-box-direction: normal;
