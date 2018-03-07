@@ -186,7 +186,13 @@ section {
         padding-bottom: .25em;
         margin: 3em 0 1em;
         font-family: $arvo;
-        font-size: 1.25rem;
+        font-size: 1.5rem;
+    }
+
+    > h3 {
+      font-size: 1.25rem;
+      font-family: $arvo;
+      padding-bottom: .25em;
     }
 }
 
@@ -517,6 +523,14 @@ main {
     list-style-type: circle;
     padding-left: 2em;
     line-height: 1.5;
+    margin-bottom: 1em;
+
+    .sub-list {
+      list-style-type: disc;
+      padding-left: 2em;
+      line-height: 1.5;
+      margin-bottom: 1em;
+    }
 }
 
 .side-by-side {
@@ -524,7 +538,6 @@ main {
     @include flex-justify-between;
     @include flex-items-start;
     @include flex-wrap;
-    padding: 2em 0;
 
     p {
         line-height: 1.5;

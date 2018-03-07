@@ -231,7 +231,13 @@ section > h2 {
   padding-bottom: .25em;
   margin: 3em 0 1em;
   font-family: "Arvo", serif;
+  font-size: 1.5rem;
+}
+
+section > h3 {
   font-size: 1.25rem;
+  font-family: "Arvo", serif;
+  padding-bottom: .25em;
 }
 
 header section > p {
@@ -601,6 +607,14 @@ main section > p a:hover, main section > p a:focus {
   list-style-type: circle;
   padding-left: 2em;
   line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+.list .sub-list {
+  list-style-type: disc;
+  padding-left: 2em;
+  line-height: 1.5;
+  margin-bottom: 1em;
 }
 
 .side-by-side {
@@ -622,7 +636,6 @@ main section > p a:hover, main section > p a:focus {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding: 2em 0;
 }
 
 .side-by-side p {
