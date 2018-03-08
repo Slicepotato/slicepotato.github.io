@@ -206,6 +206,12 @@ header {
     }
 }
 
+.banner {
+  height: 100vh;
+  background-image: url('img/banner-design-code.jpg');
+  background-size: cover;
+}
+
 .heading {
     padding-top: 3em;
 
@@ -246,7 +252,7 @@ header {
     @include breakpoint($small-break) {
         @include flex-display;
         @include flex-justify-start;
-        @include flex-items-center;
+        @include flex-items-start;
     }
 }
 
