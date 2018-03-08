@@ -250,6 +250,9 @@ header section > p {
   height: 100vh;
   background-image: url("../img/banner-design-code.jpg");
   background-size: cover;
+  background-size: contain;
+  background-position: bottom center;
+  background-repeat: no-repeat;
 }
 
 .heading {
