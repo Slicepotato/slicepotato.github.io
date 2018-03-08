@@ -248,7 +248,7 @@ header section > p {
 
 .banner {
   height: 100vh;
-  background-image: url("img/banner-design-code.jpg");
+  background-image: url("../img/banner-design-code.jpg");
   background-size: cover;
 }
 
