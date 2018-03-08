@@ -205,9 +205,11 @@ header {
         }
     }
 }
+.banner-wrap {
+  height: 100vh;
+}
 
 .banner {
-  height: 100vh;
   background-image: url('../img/banner-design-code.jpg');
   background-size: cover;
   background-size: contain;

@@ -246,8 +246,11 @@ header section > p {
   margin: 0 0 1em;
 }
 
-.banner {
+.banner-wrap {
   height: 100vh;
+}
+
+.banner {
   background-image: url("../img/banner-design-code.jpg");
   background-size: cover;
   background-size: contain;
