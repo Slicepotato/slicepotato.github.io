@@ -2,7 +2,7 @@ $(document).ready(function(){
    $('.dialog-pop li').on('click', 'button', function(){
        $('body').append('<div id="dialog" />');
        var imgUrl = $(this).find('img').data('img');
-       
+
        $('#dialog').dialog({
            modal: true,
            maxWidth: 600,
@@ -13,7 +13,7 @@ $(document).ready(function(){
            open: function(event, ui){
                $(this).append('<img src="' + imgUrl + '" />');
                $('.ui-button').addClass('fa fa-times-circle');
-               
+
                $('.ui-widget-overlay').on('click', function(){
                    $('#dialog').dialog('close');
                });
@@ -23,15 +23,14 @@ $(document).ready(function(){
            }
        });
    });
-   
+
    $(window).scroll(function(){
-       console.log($(window).scrollTop());
        $(".heading").css("opacity", 1 - $(window).scrollTop() / 150);
        $(".nav-wrap div").css("opacity", 0 + $(window).scrollTop() / 150);
        $('#nav-toggle').next('nav').removeClass('open');
   });
-  
+
   $('#nav-toggle').on('click', function(){
-     $(this).next('nav').toggleClass('open'); 
+     $(this).next('nav').toggleClass('open');
   });
 });
