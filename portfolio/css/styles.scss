@@ -205,13 +205,10 @@ header {
         }
     }
 }
-.banner-wrap {
-  height: 100vh;
-}
 
 .banner {
+  padding-top: 52.29%;
   background-image: url('../img/banner-design-code.jpg');
-  background-size: cover;
   background-size: contain;
   background-position: bottom center;
   background-repeat: no-repeat;
